@@ -3,47 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Springfield.</title>
+    <title>Springfield - Portal Oficial de Turismo.</title>
 </head>
 <body>
     <header>
         <h1>Bienvenidos a Springfield.</h1>
-        <h2>Donde nada puede malir sal.</h2>
+        <p><strong>Donde nada puede malir sal.</strong></p>
         <p>Portal oficial de turismo y gobierno de la municipalidad de Springfield, firmado por el <em>Alcalde Joe Quimby</em>.</p>
         <nav>
+            <!--Navegacion-->
             <ul>
-                <li><a href="#Inicio">Inicio</a></li>
-                <li><a href="#Impacto">Impacto</a></li>
-                <li><a href="#Metricas">Metricas</a></li>
-                <li><a href="#Mensaje de la agencia">Mensaje de la agencia</a></li>
-                <li><a href="#Contacto">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ciudad.html">La Ciudad</a></li>
+                <li><a href="lugares.html">Lugares</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="Inicio">
-                <!--aca va una imagen del logo-->
-                <!--deberia ir botones de inicio y demas para entrar a las otras paginas-->
-                <h3>Novedades:</h3>
-                <p>Lluvia ácida leve en el sector este.</p>
+        <section id="inicio">
+                <h2>Ciudad de oportunidades y cielos amarillos.</h2>
+                <img src="./img/springfield-paronamico.png" alt="Vista panorámica de la ciudad de Springfield">
+                <p>Descubrí el encanto del pueblo más representativo de los Estados Unidos. Springfield combina historia colonial, actividades al aire libre y una vibrante vida comercial.</p>
+                <p><a href="#destacados">Saltar directamente a los destacados de la temporada</a></p>
         </section>
-        <section id="Impacto">
-            <!--foto de la ciudad -->
-            <!--explorar ciudad y guia de turismo-->
-            <h3>Bienvenidos a Springfield.</h3>
-                <p>Tierra de Oportunidades y Cielo Amarillo</p>              
+        <section id="destacados">
+            <h2>Puntos de Interés y Actividades Destacadas</h2>
+            <article>
+                <header>
+                    <h3>Planta de Energía Nuclear</h3>
+                </header>
+                <p>El pilar industrial de la ciudad a cargo del Sr. Charles Montgomery Burns. Cuenta con visitas guiadas los sábados por la mañana coordinadas por su asistente Smithers.</p>
+                <p><a href="lugares.html">Ver más sobre la Planta Nuclear</a></p>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Taberna de Moe</h3>
+                </header>
+                <p>Ubicada en la Calle Walnut, es el punto de encuentro tradicional para relajarse y degustar una cerveza Duff o la exclusiva especialidad de la casa: La Llamarada Moe.</p>
+                <p><a href="lugares.html">Ver más sobre la Taberna de Moe</a></p>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Krusty Burger</h3>
+                </header>
+                <p>La cadena de comida rápida por excelencia en el Bulevar comercial, propiedad de Krusty el Payaso, ideal para una salida gastronómica en familia.</p>
+                <p><a href="lugares.html">Ver más sobre Krusty Burger</a></p>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Propuestas Culturales y Festivales</h3>
+                </header>
+                <p>Descubrí la cartelera de espectáculos de la ciudad: las emisiones en vivo del Show de Krusty, el Festival de Cine local y el gran desfile cívico del Día del Fundador.</p>
+                <p><a href="lugares.html#actividades">Explorar el calendario cultural</a></p>
+            </article>
         </section>
-        <section id="Metricas">
-            <!--aca va una imagen del logo-->
-            <!--deberia ir botones de inicio y demas para entrar a las otras paginas-->
-            <h3>Nuestras metricas:</h3>
-                <dl><dt>Habitantes</dt><dd>30.720.</dd></dl>
-                <dl><dt>Fundación</dt><dd>1796.</dd></dl>
-                <dl><dt>Días sin accidentes nucleares:</dt><dd>00.</dd></dl>
-                <dl><dt>Fuegos de neumáticos:</dt><dd>Ardiendo desde 1966.</dd></dl>                
+        <section id="metricas">
+            <h2>Nuestras metricas:</h2>
+                <dl>
+                    <dt>Habitantes</dt>
+                    <dd>30.720.</dd>
+                    <dt>Fundación</dt>
+                    <dd>1796.</dd>
+                    <dt>Días sin accidentes nucleares:</dt>
+                    <dd>00.</dd>
+                    <dt>Fuegos de neumáticos:</dt>
+                    <dd>Ardiendo desde 1966.</dd>
+                </dl>                
         </section>
-        <section id="Mensaje de la agencia">
-            <!--Foto del alcalde al lado de un texto firmado-->
+        <aside>
+            <h2>Boletin Oficial Municipal.</h2>
+            <img src="./img/alcalde-diamante.png" alt="Alcalde Joe Quimby">
             <h3>Mensaje del Honorable Alcalde «Diamante» Joe Quimby:</h3>
             <p>«¡Ciudadanos, turistas y, muy especialmente, contribuyentes puntuales!
             Como alcalde de esta bendecida y próspera comunidad, quiero darles mi más cálida y 
@@ -58,13 +92,14 @@
                 <li>Las versiones sobre supuestos acuerdos entre esta administración y el respetable empresario Don Fat Tony son patrañas infundadas.</li>
             </ol>
             <p>Disfruten de nuestras calles, gasten su dinero en el comercio local y recuerden: ¡voten por Quimby en las próximas elecciones! Si yo no robo, otro vendrá y lo hará peor».</p>
-        </section>
+            <p><strong>Aviso meteorológico:</strong> Leve llovizna ácida prevista para el sector este por tareas de mantenimiento en la Planta de Energía.</p>
+        </aside>
     </main>
-    <footer id="Contacto">
+    <footer id="pie-pagina">
         <ul>
-            <p><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Municipalidad, Avenida Siempre Viva 001.</a></p>
-            <p><a href="mailto:avenidaSiempreViva@gmail.com">Envianos un correo.</a></p>
-            <p>Creditos: </p>
+            <li>Instagram oficial: <a href="https://www.instagram.com/thesimpsons/" target="_blank" rel="noopener noreferrer">Municipalidad, Avenida Siempre Viva 001.</a></li>
+            <li><a href="mailto:avenidaSiempreViva@gmail.com">Envianos un correo.</a></li>
+            <li>Creditos: </li>
         </ul>
     </footer>
 </body>
