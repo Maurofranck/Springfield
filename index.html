@@ -3,104 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Springfield - Portal Oficial de Turismo.</title>
+    <title>Springfield - Portal Oficial</title>
+    <!-- CSS de Bootstrap (Copiar y pegar esto en las otras paginas ) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light">
+
+    <!-- 1. Header con Navbar(Barra de secciones) fija -->
     <header>
-        <h1>Bienvenidos a Springfield.</h1>
-        <p><strong>Donde nada puede malir sal.</strong></p>
-        <p>Portal oficial de turismo y gobierno de la municipalidad de Springfield, firmado por el <em>Alcalde Joe Quimby</em>.</p>
-        <nav>
-            <!--Navegacion-->
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="ciudad.html">La Ciudad</a></li>
-                <li><a href="lugares.html">Lugares</a></li>
-                <li><a href="personajes.html">Personajes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Springfield</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ciudad.html">La Ciudad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                    <a href="contacto.html" class="btn btn-warning text-dark fw-bold">Trámites y Consultas</a>
+                </div>
+            </div>
         </nav>
     </header>
-    <main>
-        <section id="inicio">
-                <h2>Ciudad de oportunidades y cielos amarillos.</h2>
-                <img src="./img/springfield-paronamico.png" alt="Vista panorámica de la ciudad de Springfield">
-                <p>Descubrí el encanto del pueblo más representativo de los Estados Unidos. Springfield combina historia colonial, actividades al aire libre y una vibrante vida comercial.</p>
-                <p><a href="#destacados">Saltar directamente a los destacados de la temporada</a></p>
-        </section>
-        <section id="destacados">
-            <h2>Puntos de Interés y Actividades Destacadas</h2>
-            <article>
-                <header>
-                    <h3>Planta de Energía Nuclear</h3>
-                </header>
-                <p>El pilar industrial de la ciudad a cargo del Sr. Charles Montgomery Burns. Cuenta con visitas guiadas los sábados por la mañana coordinadas por su asistente Smithers.</p>
-                <p><a href="lugares.html">Ver más sobre la Planta Nuclear</a></p>
-            </article>
 
-            <article>
-                <header>
-                    <h3>Taberna de Moe</h3>
-                </header>
-                <p>Ubicada en la Calle Walnut, es el punto de encuentro tradicional para relajarse y degustar una cerveza Duff o la exclusiva especialidad de la casa: La Llamarada Moe.</p>
-                <p><a href="lugares.html">Ver más sobre la Taberna de Moe</a></p>
-            </article>
-
-            <article>
-                <header>
-                    <h3>Krusty Burger</h3>
-                </header>
-                <p>La cadena de comida rápida por excelencia en el Bulevar comercial, propiedad de Krusty el Payaso, ideal para una salida gastronómica en familia.</p>
-                <p><a href="lugares.html">Ver más sobre Krusty Burger</a></p>
-            </article>
-
-            <article>
-                <header>
-                    <h3>Propuestas Culturales y Festivales</h3>
-                </header>
-                <p>Descubrí la cartelera de espectáculos de la ciudad: las emisiones en vivo del Show de Krusty, el Festival de Cine local y el gran desfile cívico del Día del Fundador.</p>
-                <p><a href="lugares.html#actividades">Explorar el calendario cultural</a></p>
-            </article>
+    <main style="margin-top: 70px;">
+        <!-- 2. Hero Banner -->
+        <section class="bg-dark text-white text-center py-5 d-flex align-items-center" style="min-height: 450px;">
+            <div class="container py-4">
+                <h1 class="display-4 fw-bold">Bienvenidos a Springfield</h1>
+                <p class="lead">"Donde nada puede malir sal" — Impulsamos el futuro con progreso nuclear y tradición.</p>
+                <div class="d-flex justify-content-center gap-3 mt-4">
+                    <a href="lugares.html" class="btn btn-primary btn-lg">Explorar Lugares</a>
+                    <a href="#contacto-rapido" class="btn btn-outline-light btn-lg">Más Información</a>
+                </div>
+                <div class="mt-4">
+                    <span class="badge bg-primary fs-6 p-2">Inscripciones abiertas para visitas guiadas 2026/2027</span>
+                </div>
+            </div>
         </section>
-        <section id="metricas">
-            <h2>Nuestras metricas:</h2>
-                <dl>
-                    <dt>Habitantes</dt>
-                    <dd>30.720.</dd>
-                    <dt>Fundación</dt>
-                    <dd>1796.</dd>
-                    <dt>Días sin accidentes nucleares:</dt>
-                    <dd>00.</dd>
-                    <dt>Fuegos de neumáticos:</dt>
-                    <dd>Ardiendo desde 1966.</dd>
-                </dl>                
+
+        <!-- 3. Strip de cronograma horizontal con enlace a la pagina Ciudad -->
+        <section class="bg-white border-top border-bottom py-4">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <div>
+                    <span class="text-uppercase fw-bold text-primary small">Boletín Oficial</span>
+                    <h2 class="h4 mb-1">Reunión informativa comunitaria</h2>
+                    <p class="text-muted mb-0">Conocé las ordenanzas del Alcalde Quimby antes de instalarte en la ciudad.</p>
+                </div>
+                <a href="ciudad.html" class="btn btn-outline-primary fw-bold text-nowrap">Ver cronograma &rarr;</a>
+            </div>
         </section>
-        <aside>
-            <h2>Boletin Oficial Municipal.</h2>
-            <img src="./img/alcalde-diamante.png" alt="Alcalde Joe Quimby">
-            <h3>Mensaje del Honorable Alcalde «Diamante» Joe Quimby:</h3>
-            <p>«¡Ciudadanos, turistas y, muy especialmente, contribuyentes puntuales!
-            Como alcalde de esta bendecida y próspera comunidad, quiero darles mi más cálida y 
-            recaudatoria bienvenida a Springfield. En nombre del municipio, agradezco profundamente 
-            que hayan abonado todas las tasas turísticas, impuestos hoteleros y el arancel 
-            extraordinario por respirar aire urbano; esos fondos van directo a obras 
-            públicas esenciales... y al mantenimiento de mi piscina climatizada.
-            Asimismo, aprovecho este espacio institucional para desmentir enérgicamente 
-            las calumnias que circulan por los medios:</p>
-            <ol>
-                <li>Es completamente falso que el lago contenga residuos radiactivos. Los peces de tres ojos son simplemente una especie exótica con visión periférica mejorada.</li>
-                <li>Las versiones sobre supuestos acuerdos entre esta administración y el respetable empresario Don Fat Tony son patrañas infundadas.</li>
-            </ol>
-            <p>Disfruten de nuestras calles, gasten su dinero en el comercio local y recuerden: ¡voten por Quimby en las próximas elecciones! Si yo no robo, otro vendrá y lo hará peor».</p>
-            <p><strong>Aviso meteorológico:</strong> Leve llovizna ácida prevista para el sector este por tareas de mantenimiento en la Planta de Energía.</p>
-        </aside>
+
+        <!-- 4. Puntos de interes en tarjetas -->
+        <section class="container my-5">
+            <h2 class="h3 fw-bold text-primary mb-4 border-bottom pb-2">Puntos de Interés Destacados</h2>
+            <div class="row g-4">
+                <!-- Tarjeta/Card 1 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="img/planta-nuclear.jpg" class="card-img-top" alt="Planta Nuclear">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title fw-bold">Planta Nuclear</h3>
+                            <p class="card-text text-muted flex-grow-1">El polo energético de Springfield, administrado por Charles Montgomery Burns.</p>
+                            <a href="lugares.html" class="btn btn-primary mt-3">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta/Card 2 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="img/taberna-de-moe.jpg" class="card-img-top" alt="Taberna de Moe">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title fw-bold">Taberna de Moe</h3>
+                            <p class="card-text text-muted flex-grow-1">El punto de encuentro tradicional de la Calle Walnut para disfrutar de una Duff helada.</p>
+                            <a href="lugares.html" class="btn btn-primary mt-3">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta/Card 3 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="img/krusty-burger-restaurante.jpg" class="card-img-top" alt="Krusty Burger">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title fw-bold">Krusty Burger</h3>
+                            <p class="card-text text-muted flex-grow-1">Comida rápida sobre el Bulevar comercial. Propuesta familiar de Krusty el Payaso.</p>
+                            <a href="lugares.html" class="btn btn-primary mt-3">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 5. Formulario de contacto en Card -->
+        <section id="contacto-rapido" class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="card shadow-sm border-0 p-4">
+                        <h2 class="h4 fw-bold text-primary mb-3">¿Querés más información sobre la ciudad?</h2>
+                        <form action="contacto.html" method="get">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="nombre" class="form-label">Nombre *</label>
+                                    <input type="text" id="nombre" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Correo electrónico *</label>
+                                    <input type="email" id="email" class="form-control" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="area" class="form-label">Área de interés *</label>
+                                    <select id="area" class="form-select" required>
+                                        <option value="">Seleccionar...</option>
+                                        <option value="turismo">Turismo y Recorridos</option>
+                                        <option value="empleo">Empleo en Planta Nuclear</option>
+                                        <option value="impuestos">Exenciones del Alcalde Quimby</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">Solicitar información</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer id="pie-pagina">
-        <ul>
-            <li>Instagram oficial: <a href="https://www.instagram.com/thesimpsons/" target="_blank" rel="noopener noreferrer">Municipalidad, Avenida Siempre Viva 001.</a></li>
-            <li><a href="mailto:avenidaSiempreViva@gmail.com">Envianos un correo.</a></li>
-            <li>Creditos: </li>
-        </ul>
+
+    <!-- 6. Footer  de varias columnas-->
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Primera columna-->
+                <div class="col-12 col-md-4">
+                    <h3 class="h5 fw-bold text-warning">Municipalidad de Springfield</h3>
+                    <address class="small text-secondary mb-0">
+                        Avenida Siempre Viva 742<br>
+                        Tel: <a href="tel:+541100000000" class="text-secondary text-decoration-none">+54 11 0000-0000</a><br>
+                        Email: <a href="mailto:info@springfield.gov" class="text-secondary text-decoration-none">info@springfield.gov</a>
+                    </address>
+                </div>
+                <!--Segunda columna-->
+                <div class="col-6 col-md-4">
+                    <h3 class="h6 fw-bold">Navegación</h3>
+                    <ul class="list-unstyled small">
+                        <li><a href="index.html" class="text-decoration-none text-light">Inicio</a></li>
+                        <li><a href="ciudad.html" class="text-decoration-none text-light">Historia y Datos</a></li>
+                        <li><a href="lugares.html" class="text-decoration-none text-light">Lugares de Interés</a></li>
+                        <li><a href="contacto.html" class="text-decoration-none text-light">Oficina de Turismo</a></li>
+                    </ul>
+                </div>
+                <!--Tercera columna-->
+                <div class="col-6 col-md-4">
+                    <h3 class="h6 fw-bold">Redes Institucionales</h3>
+                    <ul class="list-unstyled small">
+                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-light">Instagram Oficial</a></li>
+                        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-light">Prensa Municipal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top border-secondary pt-3 mt-4 text-center small text-secondary">
+                &copy; 2026 Ciudad de Springfield. Todos los derechos reservados.
+            </div>
+        </div>
     </footer>
+
+    <!-- JS de Bootstrap (copiar y pegar en las otras paginas para que funcione) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
