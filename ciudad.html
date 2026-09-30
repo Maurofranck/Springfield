@@ -4,153 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Springfield - La ciudad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
+<body class="bg-light" id="pagina-ciudad">
+
     <header>
-        <h1>SPRINGFIELD</h1>
-        <h2>Conocé la ciudad</h2>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">Springfield</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="ciudad.html">La Ciudad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares</a></li>
+                        <li class="nav-item"><a class="nav-link" href="personajes.html">Personajes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                    <a href="contacto.html" class="btn btn-warning text-dark fw-bold">Trámites y Consultas</a>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main>
-        <section>
-            <h2>Sobre Springfield</h2>
-            <p>
-                Springfield es una ciudad ubicada en Estados Unidos y es
-                conocida por ser el escenario principal de Los Simpson.
-                La ciudad se caracteriza por sus numerosos comercios,
-                edificios públicos, zonas residenciales y lugares
-                reconocidos.
-            </p>
 
-            <p>
-                Springfield es una
-                ciudad completa, con una gran variedad de servicios,
-                espacios públicos y actividades que forman parte de la
-                vida cotidiana de sus habitantes.
-            </p>
+    <main class="principal-ciudad">
+        <section class="hero-ciudad">
+            <div class="contenedor-ciudad">
+                <h1>SPRINGFIELD</h1>
+                <p>Conocé la ciudad</p>
+            </div>
         </section>
-        <section>
-            <h2>Historia de la ciudad</h2>
-            <p>
-                Springfield fue fundada en 1796 por Jebediah Springfield.
-                Con el paso del tiempo, la ciudad fue creciendo hasta
-                convertirse en una importante comunidad de la región.
-            </p>
 
-            <p>
-                Su historia está representada a través de distintos
-                edificios, monumentos y lugares que forman parte de la
-                identidad de Springfield.
-            </p>
-        </section>
-        <section>
-            <h2>Ubicación</h2>
-            <p>
-                Esta magnifica ciudad esta ubicada en Estados unidos,
-                aunque no se sabe con exactitud en que estado, ya que
-                en diferentes episodios de la serie se han dado en 
-                diferentes estados, como por ejemplo en el estado de Ohio, 
-                en el estado de Kentucky y en el estado de Oregon.
-            </p>
+        <div class="contenedor-ciudad disposicion-ciudad">
+            
+            <div class="seccion-textos">
+                <article class="articulo-informativo">
+                    <h2>Sobre Springfield</h2>
+                    <p>Springfield es una ciudad ubicada en Estados Unidos y es conocida por ser el escenario principal de Los Simpson. La ciudad se caracteriza por sus numerosos comercios, edificios públicos, zonas residenciales y lugares reconocidos.</p>
+                    <p>Springfield es una ciudad completa, con una gran variedad de servicios, espacios públicos y actividades que forman parte de la vida cotidiana de sus habitantes.</p>
+                </article>
 
-            <p>
-                A lo largo de los años aparecen diferentes referencias
-                geográficas, por lo que Springfield mantiene cierta
-                ambigüedad sobre su ubicación.
-            </p>
-        </section>
-        <section>
-            <h2>Economía e industria</h2>
-            <p>
-                Una de las principales actividades industriales de
-                Springfield está relacionada con la Planta de Energía
-                Nuclear, que constituye uno de los centros económicos
-                más importantes de la ciudad.
-            </p>
+                <article class="articulo-informativo">
+                    <h2>Historia de la ciudad</h2>
+                    <p>Springfield fue fundada en 1796 por Jebediah Springfield. Con el paso del tiempo, la ciudad fue creciendo hasta convertirse en una importante comunidad de la región.</p>
+                    <p>Su historia está representada a través de distintos edificios, monumentos y lugares que forman parte de la identidad de Springfield.</p>
+                </article>
 
-            <p>
-                Además, Springfield cuenta con numerosos comercios,
-                restaurantes, supermercados y pequeños negocios que
-                forman parte de la actividad comercial de la ciudad.
-            </p>
-        </section>
-        <section>
-            <h2>Planta de Energía Nuclear</h2>
-            <p>
-                La Planta de Energía Nuclear de Springfield es uno de
-                los lugares más importantes de la ciudad. Es una enorme
-                instalación industrial dedicada a la producción de
-                energía eléctrica.
-            </p>
+                <article class="articulo-informativo">
+                    <h2>Ubicación</h2>
+                    <p>Esta magnifica ciudad esta ubicada en Estados Unidos, aunque no se sabe con exactitud en qué estado, ya que en diferentes episodios de la serie se han dado en diferentes estados, como por ejemplo en el estado de Ohio, en el estado de Kentucky y en el estado de Oregon.</p>
+                    <p>A lo largo de los años aparecen diferentes referencias geográficas, por lo que Springfield mantiene cierta ambigüedad sobre su ubicación.</p>
+                </article>
 
-            <p>
-                La planta ocupa un lugar destacado dentro de la economía
-                local y también es uno de los puntos más reconocibles
-                de Springfield.
-            </p>
-            <img src=""
-                 alt="Planta de Energía Nuclear de Springfield"
-                 width="500">
-        </section>
-        <section>
-            <h2>El bar de Moe</h2>
-            <p>
-                El bar de Moe es uno de los establecimientos comerciales
-                más conocidos de Springfield. Se encuentra en una zona
-                céntrica de la ciudad y funciona como un tradicional
-                bar local.
-            </p>
+                <article class="articulo-informativo">
+                    <h2>Economía e industria</h2>
+                    <p>Una de las principales actividades industriales de Springfield está relacionada con la Planta de Energía Nuclear, que constituye uno de los centros económicos más importantes de la ciudad.</p>
+                    <p>Además, Springfield cuenta con numerosos comercios, restaurantes, supermercados y pequeños negocios que forman parte de la actividad comercial de la ciudad.</p>
+                </article>
 
-            <p>
-                El establecimiento es conocido por su ambiente sencillo
-                y por ser uno de los lugares habituales de reunión de
-                los habitantes de Springfield.
-            </p>
-            <img src=""
-                 alt="Bar de Moe"
-                 width="500">
-        </section>
-        <section>
-            <h2>Comercios y servicios</h2>
-            <p>
-                Springfield cuenta con una gran variedad de comercios y
-                servicios. Entre ellos se encuentran supermercados,
-                restaurantes, tiendas, escuelas, hospitales y diferentes
-                instituciones públicas.
-            </p>
+                <article class="articulo-informativo">
+                    <h2>Comercios, espacios y servicios</h2>
+                    <p>Springfield cuenta con una gran variedad de comercios y servicios. Entre ellos se encuentran supermercados, restaurantes, tiendas, escuelas, hospitales y diferentes instituciones públicas. Esta variedad de establecimientos hace que la ciudad tenga una estructura urbana similar a la de muchas ciudades estadounidenses.</p>
+                    <p>Entre sus espacios públicos se encuentran el Ayuntamiento, la Escuela Primaria, el Kwik-E-Mart, la Taberna de Moe y diferentes parques y zonas de recreación.</p>
+                    <h3>Una ciudad particular</h3>
+                    <p>Springfield se destaca por la gran variedad de situaciones y acontecimientos que ocurren en sus calles. Su combinación de zonas residenciales, comercios, industrias y espacios públicos permite representar diferentes aspectos de la vida en una ciudad estadounidense.</p>
+                </article>
+            </div>
 
-            <p>
-                Esta variedad de establecimientos hace que la ciudad
-                tenga una estructura urbana similar a la de muchas
-                ciudades estadounidenses.
-            </p>
-        </section>
-        <section>
-            <h2>Espacios y lugares de interés</h2>
-            <p>
-                Además de sus comercios e industrias, Springfield posee
-                distintos espacios públicos y lugares reconocidos que
-                forman parte de la identidad de la ciudad.
-            </p>
+            <aside class="seccion-lateral">
+                <div class="sidebar-fijo">
+                    <div class="tarjeta-lateral">
+                        <img src="img/planta-nuclear.jpg" class="tarjeta-lateral-imagen" alt="Planta de Energía Nuclear de Springfield">
+                        <div class="tarjeta-lateral-cuerpo">
+                            <h3>Planta de Energía Nuclear</h3>
+                            <p class="tarjeta-lateral-texto">Es uno de los lugares más importantes de la ciudad. Es una enorme instalación industrial dedicada a la producción de energía eléctrica que ocupa un lugar destacado dentro de la economía local.</p>
+                        </div>
+                    </div>
 
-            <p>
-                Entre ellos se encuentran el Ayuntamiento, la Escuela
-                Primaria, el Kwik-E-Mart, la Taberna de Moe y diferentes
-                parques y zonas de recreación.
-            </p>
-        </section>
-        <section>
-            <h2>Una ciudad particular</h2>
-            <p>
-                Springfield se destaca por la gran variedad de situaciones
-                y acontecimientos que ocurren en sus calles. Su combinación
-                de zonas residenciales, comercios, industrias y espacios
-                públicos permite representar diferentes aspectos de la
-                vida en una ciudad estadounidense.
-            </p>
-        </section>
+                    <div class="tarjeta-lateral">
+                        <img src="img/taberna-de-moe.jpg" class="tarjeta-lateral-imagen" alt="Bar de Moe">
+                        <div class="tarjeta-lateral-cuerpo">
+                            <h3>El bar de Moe</h3>
+                            <p class="tarjeta-lateral-texto">Uno de los establecimientos comerciales más conocidos. Se encuentra en una zona céntrica y es famoso por su ambiente sencillo y por ser el lugar habitual de reunión de los habitantes.</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
     </main>
-    <footer>
-        <p>Creditos:</p>
+
+    <footer class="pie-pagina">
+        <div class="contenedor-pie">
+            <div class="columnas-pie">
+                <div class="columna-pie-info">
+                    <h3>Municipalidad de Springfield</h3>
+                    <address>
+                        Avenida Siempre Viva 742<br>
+                        Tel: <a href="tel:+541100000000">+54 11 0000-0000</a><br>
+                        Email: <a href="mailto:info@springfield.gov">info@springfield.gov</a>
+                    </address>
+                </div>
+                <div class="columna-pie-nav">
+                    <h3>Navegación</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="ciudad.html">Historia y Datos</a></li>
+                        <li><a href="lugares.html">Lugares de Interés</a></li>
+                        <li><a href="personajes.html">Personajes</a></li>
+                        <li><a href="contacto.html">Oficina de Turismo</a></li>
+                    </ul>
+                </div>
+                <div class="columna-pie-redes">
+                    <h3>Redes Institucionales</h3>
+                    <ul>
+                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram Oficial</a></li>
+                        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Prensa Municipal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pie-derechos">
+                &copy; 2026 Ciudad de Springfield. Todos los derechos reservados.
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
