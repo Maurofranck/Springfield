@@ -1,65 +1,124 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Springfield - Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
 </head>
-
-
 <body>
-
+    
     <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">Springfield</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ciudad.html">La Ciudad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares</a></li>
+                        <li class="nav-item"><a class="nav-link" href="personajes.html">Personajes</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    </ul>
+                    <a href="contacto.html" class="btn btn-warning text-dark fw-bold">Trámites y Consultas</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <h1>Springfield</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="ciudad.html">La Ciudad</a>
-      <a href="lugares.html">Lugares</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </header>
+    <main>
+        <section class="banner banner-ayuntamiento">
+            <h1>Bienvenidos a Springfield</h1>
+            <p class="subtitulo-banner">Donde nada puede malir sal — Impulsamos el futuro con progreso nuclear y tradición.</p>
+            <div class="botones-banner">
+                <a href="lugares.html" class="boton boton-principal-grande">Explorar Lugares</a>
+                <a href="#contacto-form" class="boton boton-borde-claro-grande">Más Información</a>
+            </div>
+        </section>
+      
+        <div class="grilla-dos-columnas" id="contacto-form">
+            
+            <section>
+                <h2>¿Tenés dudas o consultas? Envialas acá</h2>
+                <form action="#" method="get" class="formulario-estandar">
+                    <div class="grilla-formulario">
+                        <div>
+                            <label for="nombre" class="etiqueta-formulario">Nombre *</label>
+                            <input type="text" id="nombre" class="control-formulario" required>
+                        </div>
+                        <div>
+                            <label for="apellido" class="etiqueta-formulario">Apellido *</label>
+                            <input type="text" id="apellido" class="control-formulario" required>
+                        </div>
+                        <div>
+                            <label for="telefono" class="etiqueta-formulario">Teléfono</label>
+                            <input type="tel" id="telefono" class="control-formulario">
+                        </div>
+                        <div>
+                            <label for="email" class="etiqueta-formulario">Correo electrónico *</label>
+                            <input type="email" id="email" class="control-formulario" required>
+                        </div>
+                        <div class="campo-completo">
+                            <label for="mensaje" class="etiqueta-formulario">Envianos tu mensaje</label>
+                            <textarea id="mensaje" class="control-formulario" rows="5" required></textarea>
+                        </div>
+                        <div class="campo-completo">
+                            <button type="submit" class="boton boton-ancho-completo">Enviar mensaje</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
 
+            <aside class="mapa-lateral">
+                <img src="img/mapaMunicipal.jfif" alt="Mapa Municipal">
+                <h3>Acercate a nuestras instalaciones</h3>
+                <p>Podés pasar a conocer nuestras oficinas y de paso dejarnos tus preocupaciones.</p>
+                <p><strong>Estamos frente a la plaza central</strong></p>
+                <a href="https://goo.gl/maps/8Z5k1g6J7vL2" class="boton boton-borde-primario">Ver en Google Maps</a>
+            </aside>
 
-  <main>
+        </div>
+    </main>
 
-    <h2>Contacto</h2>
-
-    <p>Oficina de Turismo de Springfield</p>
-
-    <section>
-
-    <p>Dirección:<a href="https://goo.gl/maps/8Z5k1g6J7vL2">742 Evergreen Terrace, Springfield</a></p>
-    <p>Telefeno:<a href="tel:1134053067">1134053067</a> </p>
-    <p>Mail:<a href="mailto:SpringfieldTourism@gmail.com">SpringfieldTourism@gmail.com</a> </p>
-    <p>Seguinos en:<a href="https://www.instagram.com/springfield_cuidad/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
-
-
-
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-  </main>
-
-
-
-
-
-
-
-
-
+    <footer>
+        <div class="pie-pagina-grilla ">
+            <div class="contenedor-pie">
+            <div class="columnas-pie">
+                <div class="columna-pie-info">
+                    <h3>Municipalidad de Springfield</h3>
+                    <address>
+                        Avenida Siempre Viva 742<br>
+                        Tel: <a href="tel:+541100000000">+54 11 0000-0000</a><br>
+                        Email: <a href="mailto:info@springfield.gov">info@springfield.gov</a>
+                    </address>
+                </div>
+                <div class="columna-pie-nav">
+                    <h3>Navegación</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="ciudad.html">Historia y Datos</a></li>
+                        <li><a href="lugares.html">Lugares de Interés</a></li>
+                        <li><a href="personajes.html">Personajes</a></li>
+                        <li><a href="contacto.html">Oficina de Turismo</a></li>
+                    </ul>
+                </div>
+                <div class="columna-pie-redes">
+                    <h3>Redes Institucionales</h3>
+                    <ul>
+                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram Oficial</a></li>
+                        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Prensa Municipal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pie-derechos">
+                &copy; 2026 Ciudad de Springfield. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
