@@ -487,3 +487,12 @@ nav a:hover {
     font-size: 0.85rem;
     color: #999999;
 }
+
+.imagen-en-seccion {
+    width: 100%;
+    max-width: 500px;    /* Limita que no crezca más de 500px de ancho */
+    height: 280px;       /* Altura fija idéntica */
+    object-fit: cover;   /* Evita que se deforme */
+    margin: 1rem auto;   /* El "auto" a los lados ayuda a centrarla si el bloque lo permite */
+    display: block;
+}
