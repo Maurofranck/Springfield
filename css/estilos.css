@@ -435,6 +435,12 @@ footer li {
     margin-bottom: 1.5rem;
 }
 
+.banner-lugares {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/Ciudad.jfif');
+    background-size: cover;
+    background-position: center;
+}
+
 .banner-ciudad {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/Ciudad.jfif');
     background-size: cover;

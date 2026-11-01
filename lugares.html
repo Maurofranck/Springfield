@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Springfield - Lugares de Interes</title>
-
+    <title>Springfield - Lugares</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body id="pagina-lugares">
+<body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
             <div class="container">
@@ -24,7 +22,7 @@
                         <li class="nav-item"><a class="nav-link" href="ciudad.html">La Ciudad</a></li>
                         <li class="nav-item"><a class="nav-link active" href="lugares.html">Lugares</a></li>
                         <li class="nav-item"><a class="nav-link" href="personajes.html">Personajes</a></li>
-                        <li class="nav-item"><a class="nav-link " href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                     </ul>
                     <a href="contacto.html" class="btn btn-warning text-dark fw-bold">Trámites y Consultas</a>
                 </div>
@@ -33,78 +31,97 @@
     </header>
 
     <main>
-        <section>
-            <h2>Atractivos mas destacados de Springfield</h2>
-            <p>Descubre los lugares mas emblematicos de nuestra ciudad. Puedes ir directamenta a la seccion de <a href="#actividades">Actividades Culturales</a> para una experiencia más recreativa</p>
+
+        <!-- banner como el de index -->
+        <section class="banner banner-lugares">
+            <h1>Lugares de Springfield</h1>
+            <p class="subtitulo-banner">Recorré los puntos más emblemáticos y conocidos de nuestra ciudad.</p>
         </section>
 
-        <section id="lista-lugares">
-            <article class="tarjeta-lugar">
-                <h3>Planta de Energía Nuclear de Springfield</h3>
-                <p><strong>Ubicacion:</strong> Zona Industrial.</p>
-                <p>Es el principal orgullo industrial de la ciudad, manejada por el gran empresario, el Sr. Charles Montgomery Burns, ésta planta genera energía limpia a todos los habitantes y cuenta con empleados de excelente calidad tecnica.</p>
-                <p><em>¿Qué hacer aquí?</em> Los días sabados de 09:00 a 10:00 hay una visita guiada por el asistente personal del Sr. Burns, el Sr. Smithers.</p>
-                <div class="galeria-lugares">
-                    <img src="img/planta-nuclear.jpg" alt="Planta Nuclear de Springfield">
-                    <img src="img/srburns-y-smithers.jpg" alt="El Sr. Burns y su asistente Smithers">
-                </div>
-            </article>
-    
-            <article class="tarjeta-lugar">
-                <h3>Taberna de Moe</h3>
-                <p><strong>Ubicacion:</strong> Calle Wualnut</p>
-                <p>Esta taberna manejada por el agradable cantinero Moe Szyslak es el lugar ideal para relajarse y tomar una bebida acompañado de los ciudadanos locales.</p>
-                <p><em>¿Qué hacer aquí?</em> De lunes a domingos de 12:00 a 21:00 (excepto los miercoles) se puede disfrutar de beber una cerveza Duff o la especialidad de la casa; La Llamarada Moe.</p>
-                <div class="galeria-lugares">
-                    <img src="img/taberna-de-moe.jpg" alt="Taberna de Moe">
-                    <img src="img/llamarada-moe.jpg" alt="La especialidad del cantinero Moe: La Llamarada Moe">
-                </div>
-            </article>
-    
-            <article class="tarjeta-lugar">
-                <h3>Krusty Burger</h3>
-                <p><strong>Ubicacion:</strong> Bulevar de Comida Rapida.</p>
-                <p>Si se quiere una salida familiar la cadena Krusty Burger es la opcion perfecta.</p>
-                <p><em>¿Qué hacer aquí?</em> De lunes a domingos de 12:00 a 21:00. La cadena de comida rapida propiedad de Krusty el Payaso ofrece una deliciosa hamburguesa con carne de calidad premium que la coloca entre las mejores cadenas de comida rapida del país.</p>
-                <div class="galeria-lugares">
-                    <img src="img/krusty-burger-restaurante.jpg" alt="El restaurante Krusty Burger">
-                    <img src="img/krusty-con-la-hamburguesa.jpg" alt="Krusty el Payaso probando su hamburguesa">
-                </div>
-            </article>
-        </section>
+        <!-- contenedor bootstrap -->
+        <div class="container my-5">
+            <div class="row gy-4 gx-lg-5">
+                <div class="col-lg-8 d-flex flex-column gap-4">
 
-        <section id="actividades" class="tarjeta-lugar">
-            <h2>Propuestas Culturales y eventos.</h2>
-            <p>Ranking de los eventos más recomendados</p>
-            <ol class="lista-actividades" >
-                <li>
-                    <h3>El Show de Krusty el Payaso</h3>
-                    <p>El programa favorito de los niños donde Krusty y su compañero Mel Patiño hacen actos comicos. Tambien se transmite un episodio nuevo de la famosa serie animada <strong>"Tomy y Daly".</strong></p>
-                    <div class="galeria-lugares">
-                        <img src="img/el-show-de-krusty.jpg" alt="Krusty junto a sus compañeros">
-                        <img src="img/tomy-y-daly.jpg" alt="El programa de Tomy y Daly">
-                    </div>
-                </li>
+                    <article class="tarjeta-lugar">
+                        <h3>Planta de Energía Nuclear de Springfield</h3>
+                        <p><strong>Ubicacion:</strong> Zona Industrial.</p>
+                        <p>Es el principal orgullo industrial de la ciudad, manejada por el gran empresario, el Sr. Charles Montgomery Burns, ésta planta genera energía limpia a todos los habitantes y cuenta con empleados de excelente calidad tecnica.</p>
+                        <p><em>¿Qué hacer aquí?</em> Los días sabados de 09:00 a 10:00 hay una visita guiada por el asistente personal del Sr. Burns, el Sr. Smithers.</p>
+                        <div class="galeria-lugares">
+                            <img src="img/planta-nuclear.jpg" alt="Planta Nuclear de Springfield">
+                            <img src="img/srburns-y-smithers.jpg" alt="El Sr. Burns y su asistente Smithers">
+                        </div>
+                    </article>
+            
+                    <article class="tarjeta-lugar">
+                        <h3>Taberna de Moe</h3>
+                        <p><strong>Ubicacion:</strong> Calle Wualnut</p>
+                        <p>Esta taberna manejada por el agradable cantinero Moe Szyslak es el lugar ideal para relajarse y tomar una bebida acompañado de los ciudadanos locales.</p>
+                        <p><em>¿Qué hacer aquí?</em> De lunes a domingos de 12:00 a 21:00 (excepto los miercoles) se puede disfrutar de beber una cerveza Duff o la especialidad de la casa; La Llamarada Moe.</p>
+                        <div class="galeria-lugares">
+                            <img src="img/taberna-de-moe.jpg" alt="Taberna de Moe">
+                            <img src="img/llamarada-moe.jpg" alt="La especialidad del cantinero Moe: La Llamarada Moe">
+                        </div>
+                    </article>
+            
+                    <article class="tarjeta-lugar">
+                        <h3>Krusty Burger</h3>
+                        <p><strong>Ubicacion:</strong> Bulevar de Comida Rapida.</p>
+                        <p>Si se quiere una salida familiar la cadena Krusty Burger es la opcion perfecta.</p>
+                        <p><em>¿Qué hacer aquí?</em> De lunes a domingos de 12:00 a 21:00. La cadena de comida rapida propiedad de Krusty el Payaso ofrece una deliciosa hamburguesa con carne de calidad premium que la coloca entre las mejores cadenas de comida rapida del país.</p>
+                        <div class="galeria-lugares">
+                            <img src="img/krusty-burger-restaurante.jpg" alt="El restaurante Krusty Burger">
+                            <img src="img/krusty-con-la-hamburguesa.jpg" alt="Krusty el Payaso probando su hamburguesa">
+                        </div>
+                    </article>
 
-                <li>
-                    <h3>Festival de Cine de Springfield</h3>
-                    <p>El evento cultural donde cineastas locales presentan sus obras. Aquí se presentó el famoso cortometraje de Barney Gómez "No lloren por mí, ya estoy muerto".</p>
-                    <div class="galeria-lugares">
-                        <img src="img/festival-de-cine.jpg" alt="Festival de Cine">
-                        <img src="img/barney-gomez-corto.jpg" alt="Iconica escena de Barney Gómez">
-                    </div>
-                </li>
+                    <!-- Sección de Actividades Culturales y Eventos -->
+                    <section id="actividades" class="tarjeta-lugar">
+                        <h2>Propuestas Culturales y eventos.</h2>
+                        <p>Ranking de los eventos más recomendados</p>
+                        <ol class="lista-actividades">
+                            <li>
+                                <h3>El Show de Krusty el Payaso</h3>
+                                <p>El programa favorito de los niños donde Krusty y su compañero Mel Patiño hacen actos comicos. Tambien se transmite un episodio nuevo de la famosa serie animada <strong>"Tomy y Daly".</strong></p>
+                                <div class="galeria-lugares">
+                                    <img src="img/el-show-de-krusty.jpg" alt="Krusty junto a sus compañeros">
+                                    <img src="img/tomy-y-daly.jpg" alt="El programa de Tomy y Daly">
+                                </div>
+                            </li>
 
-                <li>
-                    <h3>Día del Fundador</h3>
-                    <p>Una de las mayores festividades, se celebra el aniversario de fundacion de la ciudad por parte de nuestro querido <strong><em>Jeremias Springfield</em></strong>. En este festival la ciudad se tiñe de cultura local y orgullo patriota con varios actos y un final con desfile de carrozas.</p>
-                    <div class="galeria-lugares">
-                        <img src="img/dia-del-fundador.jpg" alt="Desfile en el Dia del Fundador">
+                            <li>
+                                <h3>Festival de Cine de Springfield</h3>
+                                <p>El evento cultural donde cineastas locales presentan sus obras. Aquí se presentó el famoso cortometraje de Barney Gómez "No lloren por mí, ya estoy muerto".</p>
+                                <div class="galeria-lugares">
+                                    <img src="img/festival-de-cine.jpg" alt="Festival de Cine">
+                                    <img src="img/barney-gomez-corto.jpg" alt="Iconica escena de Barney Gómez">
+                                </div>
+                            </li>
+
+                            <li>
+                                <h3>Día del Fundador</h3>
+                                <p>Una de las mayores festividades, se celebra el aniversario de fundacion de la ciudad por parte de nuestro querido <strong><em>Jeremias Springfield</em></strong>. En este festival la ciudad se tiñe de cultura local y orgullo patriota con varios actos y un final con desfile de carrozas.</p>
+                                <div class="galeria-lugares">
+                                    <img src="img/dia-del-fundador.jpg" alt="Desfile en el Dia del Fundador">
+                                </div>
+                            </li>
+                        </ol>
+                    </section>
+
+                </div>
+
+                <!-- columna lateral -->
+                <aside class="col-lg-4">
+                    <div class="sticky-top" style="top: 100px;">
+                        <!-- Espacio libre para llenar más tarde si hay una buena idea -->
                     </div>
-                </li>
-            </ol>
-        </section>
+                </aside>
+
+            </div>
+        </div>
     </main>
+
     <footer>
         <div class="pie-pagina-grilla ">
             <div class="contenedor-pie">
@@ -140,5 +157,6 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
