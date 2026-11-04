@@ -445,3 +445,12 @@ footer li {
     height: 250px;       /* Altura fija para todas las fotos */
     object-fit: cover;   /* Recorta la imagen prolijamente para que llene el espacio sin estirarse */
 }
+.banner-personajes {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../img/personajesDeSprinfield.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 90px 20px;
+    text-align: center;
+    border-radius: 0 0 15px 15px; /* Opcional: esquinas inferiores suavemente redondeadas */
+}
