@@ -440,3 +440,8 @@ footer li {
     background-size: cover;
     background-position: center;
 }
+.imagen-en-seccion {
+    width: 100%;
+    height: 250px;       /* Altura fija para todas las fotos */
+    object-fit: cover;   /* Recorta la imagen prolijamente para que llene el espacio sin estirarse */
+}
