@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Springfield - Portal Oficial</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
     <link href="css/estilos.css" rel="stylesheet">
 </head>
 <body>
-
+    
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="index.html">Springfield</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacion">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="menuNav">
+                <div class="collapse navbar-collapse" id="menu-navegacion">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="ciudad.html">La Ciudad</a></li>
@@ -24,34 +30,87 @@
                         <li class="nav-item"><a class="nav-link" href="personajes.html">Personajes</a></li>
                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                     </ul>
-                    <a href="contacto.html" class="btn btn-warning text-dark fw-bold">Trámites y Consultas</a>
+                    <a class="btn btn-warning text-dark fw-bold" id="boton-oscuro">🌙 Modo oscuro</a>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="banner banner-inicio">
-            <h1>Bienvenidos a Springfield</h1>
-            <p class="subtitulo-banner">Donde nada puede malir sal — Impulsamos el futuro con progreso nuclear y tradición.</p>
-            <div class="botones-banner">
-                <a href="lugares.html" class="boton boton-principal-grande">Explorar Lugares</a>
-                <a href="#contacto-rapido" class="boton boton-borde-claro-grande">Más Información</a>
-            </div>
-        </section>
-
-        <section class="boletin-oficial">
-            <div class="textos-boletin">
-                <span class="etiqueta-boletin">Boletín Oficial</span>
-                <h2>Reunión informativa comunitaria</h2>
-                <p class="texto-secundario">Conocé las ordenanzas del Alcalde Quimby antes de instalarte en la ciudad.</p>
-            </div>
-            <a href="ciudad.html" class="boton boton-borde-primario">Ver ciudad</a>
-        </section>
-
-        <section>
-            <h2>Puntos de Interés Destacados</h2>
+        <section class="banner banner-inicio" id="hero-seccion">
+            <h1 class="display-4 fw-bold">Bienvenidos a Springfield</h1>
+            <p class="subtitulo-banner fs-5">Donde nada puede malir sal — Impulsamos el futuro con progreso nuclear y tradición.</p>
             
+            <div class="row g-3 justify-content-center mt-3 w-100">
+                <div class="col-6 col-md-3">
+                    <a href="#boletin-seccion" class="boton boton-principal-grande w-100 text-center py-2">Boletín</a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="#destacados-seccion" class="boton boton-principal-grande w-100 text-center py-2">Destacados</a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="#celebridades-seccion" class="boton boton-borde-claro-grande w-100 text-center py-2">Celebridades</a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="#informacion-seccion" class="boton boton-borde-claro-grande w-100 text-center py-2">Información</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="boletin-oficial d-block" id="boletin-seccion">
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+                <div class="textos-boletin">
+                    <span class="etiqueta-boletin">Boletín Oficial</span>
+                    <h2 class="mb-1">Comunicados del Alcalde Quimby</h2>
+                    <p class="texto-secundario mb-0">Conocé las nuevas ordenanzas antes de instalarte en la ciudad.</p>
+                </div>
+                <a href="ciudad.html" class="boton boton-borde-primario">Ver ciudad</a>
+            </div>
+
+            <div class="accordion accordion-flush border rounded overflow-hidden" id="acordeon-boletin">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="titulo-uno">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#colapso-uno" aria-expanded="false" aria-controls="colapso-uno">
+                            Ordenanza #104: Impuesto a los pantalones bombachos
+                        </button>
+                    </h2>
+                    <div id="colapso-uno" class="accordion-collapse collapse" aria-labelledby="titulo-uno" data-bs-parent="#acordeon-boletin">
+                        <div class="accordion-body texto-secundario">
+                            Por disposición municipal, todo ciudadano que sea visto utilizando pantalones bombachos deberá abonar una tasa extra. Los fondos recaudados serán destinados a la estatua de Jebediah Springfield.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="titulo-dos">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#colapso-dos" aria-expanded="false" aria-controls="colapso-dos">
+                            Aviso del Departamento de Policía
+                        </button>
+                    </h2>
+                    <div id="colapso-dos" class="accordion-collapse collapse" aria-labelledby="titulo-dos" data-bs-parent="#acordeon-boletin">
+                        <div class="accordion-body texto-secundario">
+                            El Jefe Gorgory informa que las donaciones de rosquillas serán recibidas de lunes a viernes en la comisaría central. Se priorizarán las glaseadas.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="titulo-tres">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#colapso-tres" aria-expanded="false" aria-controls="colapso-tres">
+                            Corte de suministro eléctrico programado
+                        </button>
+                    </h2>
+                    <div id="colapso-tres" class="accordion-collapse collapse" aria-labelledby="titulo-tres" data-bs-parent="#acordeon-boletin">
+                        <div class="accordion-body texto-secundario">
+                            La Planta de Energía Nuclear notifica que habrá intermitencias en el servicio durante el fin de semana debido a un "incidente menor" en el sector 7G.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="destacados-seccion">
+            <h2>Lugares destacados</h2>
             <div class="grilla-tres-columnas">
                 <article class="tarjeta">
                     <img src="img/planta-nuclear.jpg" alt="Planta Nuclear">
@@ -59,14 +118,12 @@
                     <p class="texto-secundario">El polo energético de Springfield, administrado por Charles Montgomery Burns.</p>
                     <a href="lugares.html" class="boton boton-principal margen-superior-auto">Ver detalles</a>
                 </article>
-                
                 <article class="tarjeta">
                     <img src="img/taberna-de-moe.jpg" alt="Taberna de Moe">
                     <h3>Taberna de Moe</h3>
                     <p class="texto-secundario">El punto de encuentro tradicional de la Calle Walnut para disfrutar de una Duff helada.</p>
                     <a href="lugares.html" class="boton boton-principal margen-superior-auto">Ver detalles</a>
                 </article>
-                
                 <article class="tarjeta">
                     <img src="img/krusty-burger-restaurante.jpg" alt="Krusty Burger">
                     <h3>Krusty Burger</h3>
@@ -76,71 +133,94 @@
             </div>
         </section>
 
-        <section class="seccion-formulario" id="contacto-rapido">
-            <h2 class="informacion-central">¿Querés más información sobre la ciudad?</h2>
-            
-            <form action="contacto.html" method="get" class="formulario-estandar">
-                <div class="grilla-formulario">
-                    <div>
-                        <label for="nombre" class="etiqueta-formulario">Nombre *</label>
-                        <input type="text" id="nombre" class="control-formulario" required>
-                    </div>
-                    <div>
-                        <label for="email" class="etiqueta-formulario">Correo electrónico *</label>
-                        <input type="email" id="email" class="control-formulario" required>
-                    </div>
-                    <div class="campo-completo">
-                        <label for="area" class="etiqueta-formulario">Área de interés *</label>
-                        <select id="area" class="control-formulario" required>
-                            <option value="">Seleccionar...</option>
-                            <option value="turismo">Turismo y Recorridos</option>
-                            <option value="empleo">Empleo en Planta Nuclear</option>
-                            <option value="impuestos">Exenciones del Alcalde Quimby</option>
-                        </select>
-                    </div>
-                    <div class="campo-completo">
-                        <button type="submit" class="boton boton-ancho-completo">Solicitar información</button>
+        <section id="celebridades-seccion">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-md-6">
+                    <h2>Celebridades</h2>
+                    <p>Conocé a los habitantes más icónicos de Springfield. Desde los trabajadores de la planta nuclear hasta las figuras de la televisión local, cada ciudadano aporta su granito de arena (o de caos) a nuestra comunidad.</p>
+                    <a href="personajes.html" class="boton boton-principal">Ver todos los personajes</a>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div id="carrusel-personajes" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="4000">
+                                <img src="./img/bart.jpg" class="d-block w-100 img-carrusel" alt="Bart Simpson">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="./img/krusty-con-la-hamburguesa.jpg" class="d-block w-100 img-carrusel" alt="Krusty">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="./img/carl.jpg" class="d-block w-100 img-carrusel" alt="Carl">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-personajes" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carrusel-personajes" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
                     </div>
                 </div>
-            </form>
+            </div>
+        </section>
+
+        <section class="llamado-accion text-center py-5" id="informacion-seccion">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="mb-3">¿Te gustaría visitar Springfield?</h2>
+                    <p class="texto-secundario fs-5 mb-4">
+                        Nuestra Oficina de Turismo está lista para ayudarte a planificar tu viaje, gestionar trámites o responder cualquier consulta ciudadana.
+                    </p>
+                    <a href="contacto.html" class="boton boton-principal-grande">
+                        Ir a la Oficina de Contacto
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <div class="pie-pagina-grilla ">
+        <div class="pie-pagina-grilla">
             <div class="contenedor-pie">
-            <div class="columnas-pie">
-                <div class="columna-pie-info">
-                    <h3>Municipalidad de Springfield</h3>
-                    <address>
-                        Avenida Siempre Viva 742<br>
-                        Tel: <a href="tel:+541100000000">+54 11 0000-0000</a><br>
-                        Email: <a href="mailto:info@springfield.gov">info@springfield.gov</a>
-                    </address>
+                <div class="columnas-pie">
+                    <div class="columna-pie-info">
+                        <h3>Municipalidad de Springfield</h3>
+                        <address>
+                            Avenida Siempre Viva 742<br>
+                            Tel: <a href="tel:+541100000000">+54 11 0000-0000</a><br>
+                            Email: <a href="mailto:info@springfield.gov">info@springfield.gov</a>
+                        </address>
+                    </div>
+                    <div class="columna-pie-nav">
+                        <h3>Navegación</h3>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="ciudad.html">Historia y Datos</a></li>
+                            <li><a href="lugares.html">Lugares de Interés</a></li>
+                            <li><a href="personajes.html">Personajes</a></li>
+                            <li><a href="contacto.html">Oficina de Turismo</a></li>
+                        </ul>
+                    </div>
+                    <div class="columna-pie-redes">
+                        <h3>Redes Institucionales</h3>
+                        <ul>
+                            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram Oficial</a></li>
+                            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Prensa Municipal</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="columna-pie-nav">
-                    <h3>Navegación</h3>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="ciudad.html">Historia y Datos</a></li>
-                        <li><a href="lugares.html">Lugares de Interés</a></li>
-                        <li><a href="personajes.html">Personajes</a></li>
-                        <li><a href="contacto.html">Oficina de Turismo</a></li>
-                    </ul>
+                <div class="pie-derechos">
+                    &copy; 2026 Ciudad de Springfield. Todos los derechos reservados.
                 </div>
-                <div class="columna-pie-redes">
-                    <h3>Redes Institucionales</h3>
-                    <ul>
-                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram Oficial</a></li>
-                        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Prensa Municipal</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="pie-derechos">
-                &copy; 2026 Ciudad de Springfield. Todos los derechos reservados.
             </div>
         </div>
     </footer>
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
+    <script src="js/main.js"></script>
 </body>
 </html>
