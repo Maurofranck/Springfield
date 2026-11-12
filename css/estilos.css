@@ -230,7 +230,7 @@ img {
 }
 
 .banner-personajes {
-    background-image: linear-gradient(var(--color-overlay-banner), var(--color-overlay-banner)), url('../img/Ciudad.jfif');
+    background-image: linear-gradient(var(--color-overlay-banner), var(--color-overlay-banner)), url('../img/personajesDeSprinfield.jpg');
     background-size: cover;
     background-position: center;
 }
