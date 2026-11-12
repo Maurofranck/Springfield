@@ -235,6 +235,12 @@ img {
     background-position: center;
 }
 
+.banner-lugares {
+    background-image: linear-gradient(var(--color-overlay-banner), var(--color-overlay-banner)), url('../img/planta-nuclear.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 .subtitulo-banner {
     font-size: 1.5rem;
     color: var(--color-blanco);
@@ -604,4 +610,17 @@ body.oscuro .control-formulario {
 body.oscuro img {
     border-radius: 8px;
     border: 1px solid var(--color-borde-oscuro);
+}
+
+/* Títulos del acordeón de eventos */
+.accordion-header {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: inherit;
+}
+
+/* Evita que el navbar fijo tape los títulos al usar los botones del hero */
+#pagina-lugares [id] {
+    scroll-margin-top: 90px;
 }
