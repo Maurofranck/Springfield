@@ -32,3 +32,26 @@ if (botonModo) {
         }
     });
 }
+
+const fotoPlanta = document.getElementById('foto-planta');
+let contadorClicks = 0;
+
+if (fotoPlanta) {
+    fotoPlanta.addEventListener('click', function() {
+        contadorClicks++;
+        if (contadorClicks === 3) {
+            alert('¡DEJA DE CLICKEAR QUE EXPLOTA LA PLANTA! ☢️ (Atte: Sr. Burns)');
+            contadorClicks = 0; // Reiniciamos el contador por si quieren volver a jugar
+        }
+    });
+}
+
+const contadorAccidentes = document.getElementById('contador-accidentes');
+const btnAccidente = document.getElementById('btn-accidente');
+
+if (contadorAccidentes && btnAccidente) {
+    btnAccidente.addEventListener('click', function() {
+        contadorAccidentes.textContent = '0';
+        alert('Se ha reiniciado el contador de la Planta Nuclear. El Sr. Burns no estará contento.');
+    });
+}
